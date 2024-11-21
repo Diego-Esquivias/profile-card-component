@@ -1,7 +1,27 @@
-div {
-    background-color: grey;
-    padding: 10px;
-    width: 80%;
+.profileCard {
+    background-color: rgb(162, 162, 162);
+    padding: 15px;
+    width: 20%;
     margin: auto;
     border-radius: 10px;
+    text-align: center;
+    box-shadow: -10px 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profileImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    transition: height 1s ease, width 1s ease;
+}
+
+.profileImage:hover {
+    width: 150px;
+    height: 150px;
+}
+
+body {
+    background-color: aliceblue;
 }
