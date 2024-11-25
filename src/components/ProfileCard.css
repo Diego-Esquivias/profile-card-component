@@ -1,27 +1,112 @@
 .profileCard {
-    background-color: rgb(162, 162, 162);
+    background-color: #023C40;
     padding: 15px;
     width: 20%;
     margin: auto;
     border-radius: 10px;
     text-align: center;
     box-shadow: -10px 10px 10px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.profileCard hr {
+    border: 2.5px solid #6B0F1A;
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.profileCard .emailLink a {
+    color: whitesmoke;
+    text-decoration: underline;
+    transition: all 1s ease;
+}
+
+.emailLink a:hover {
+    color: #00b4c1;
+}
+
+.profileCard h2 {
+    margin: 0px;
+}
+
+.linksContainer {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #6B0F1A;
 }
 
 .profileImage {
-    width: 100px;
-    height: 100px;
+    width: 6.25em;
+    height: 6.25em;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 10px;
-    transition: height 1s ease, width 1s ease;
+    transition: height .5s ease, width .5s ease;
 }
 
-.profileImage:hover {
-    width: 150px;
-    height: 150px;
+.profileCard:hover {
+    .profileImage{
+        width: 8.375em;
+        height: 8.375em;
+    }
+}
+
+.socialLinks svg{
+    margin: 0px 10px;
+    transition: height .5s ease, width .5s ease;
+}
+
+.socialLinks:hover svg {
+    height: 1.5em;
+    width: 1.5em;
 }
 
 body {
     background-color: aliceblue;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 0.8em;
+    }
+    
+    .profileCard {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: 1em;
+    }
+    
+    .profileCard {
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 1.2em;
+    }
+    
+    .profileCard {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        font-size: 1.4em;
+    }
+    
+    .profileCard {
+        width: 25%;
+    }
 }

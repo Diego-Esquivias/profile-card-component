@@ -13,17 +13,22 @@ const Profile = ({profileImage, firstName, lastName, email, socialMediaLinks}) =
             <img src={profileImage} alt={firstName +'' + lastName} className='profileImage' />
             <hr />
             <h2>{firstName} {lastName}</h2>
-            <p>{email}</p>
-            
-            <a href={socialMediaLinks.github} target="_blank" rel="noopener noreferrer">
-                <FaGithub style={{color: 'black'}}/>
-            </a>
-            <a href={socialMediaLinks.instagram} target="_blank" rel="noopener noreferrer">
-                <FaInstagram style={{color: 'black'}}/>
-            </a>
-            <a href={socialMediaLinks.facebook} target="_blank" rel="noopener noreferrer">
-                <FaFacebook style={{color: 'black'}}/>
-            </a>
+            <p className='emailLink'>
+                <a href={email}>
+                    {email}
+                </a>
+            </p>
+            <div className="linksContainer">
+                <a href={socialMediaLinks.github} target="_blank" rel="noopener noreferrer" className='socialLinks'>
+                    <FaGithub style={{color: 'whitesmoke'}}/>
+                </a>
+                <a href={socialMediaLinks.instagram} target="_blank" rel="noopener noreferrer" className='socialLinks'>
+                    <FaInstagram style={{color: 'whitesmoke'}}/>
+                </a>
+                <a href={socialMediaLinks.facebook} target="_blank" rel="noopener noreferrer" className='socialLinks'>
+                    <FaFacebook style={{color: 'whitesmoke'}}/>
+                </a>
+            </div>
         </div>
     )
 }
