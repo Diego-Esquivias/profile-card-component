@@ -4,10 +4,6 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 
 const Profile = ({profileImage, firstName, lastName, email, socialMediaLinks}) => {
-    console.log(socialMediaLinks)
-    console.log("---------------------------")
-    console.log(socialMediaLinks.github)
-
     return (
         <div className='profileCard'>
             <img src={profileImage} alt={firstName +'' + lastName} className='profileImage' />
